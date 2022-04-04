@@ -1,0 +1,13 @@
+{% extends 'mvt_app/base.html' %}
+
+
+{% block main_content %}
+
+
+    {% for ficha in fichas  %}
+        <p>{{ ficha.nombre_apellido }}</p>
+        <p>{{ ficha.fecha_nacimiento }}</p>
+        <p>{{ ficha.dni }}</p>
+    {% endfor %}
+
+{% endblock main_content %}
